@@ -6,6 +6,7 @@ import { ResumeData } from "@/types/resume";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { toast } from "sonner";
+import ChatbotWidget from "@/components/ChatbotWidget";
 
 const Index = () => {
   const [resumeData, setResumeData] = useState<ResumeData>({
@@ -99,6 +100,8 @@ const Index = () => {
           </TabsContent>
         </Tabs>
       </main>
+      
+      <ChatbotWidget />
       
       <footer className="mt-auto bg-gray-100 p-4 border-t print:hidden">
         <div className="container mx-auto text-center text-gray-600 text-sm">
