@@ -109,7 +109,8 @@ const Index = () => {
         </div>
       </footer>
 
-      <style jsx global>{`
+      <style>
+        {`
         @media print {
           body * {
             visibility: hidden;
@@ -124,7 +125,8 @@ const Index = () => {
             width: 100%;
           }
         }
-      `}</style>
+        `}
+      </style>
     </div>
   );
 };

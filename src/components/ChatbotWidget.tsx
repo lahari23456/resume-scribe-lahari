@@ -13,9 +13,9 @@ const ChatbotWidget = () => {
   return (
     <div className="fixed bottom-5 right-5 z-50 print:hidden">
       {isOpen ? (
-        <div className="bg-white rounded-lg shadow-lg flex flex-col" style={{ width: '350px', height: '500px' }}>
+        <div className="bg-white rounded-lg shadow-lg flex flex-col" style={{ width: '350px', height: '700px' }}>
           <div className="bg-resume-primary text-white p-3 flex justify-between items-center rounded-t-lg">
-            <h3 className="font-medium">Resume Assistant</h3>
+            <h3 className="font-medium">Portfolio Assistant</h3>
             <Button 
               variant="ghost" 
               size="icon" 
@@ -29,7 +29,7 @@ const ChatbotWidget = () => {
             <iframe
               src="https://www.chatbase.co/chatbot-iframe/f_tqI0HzpZdHpxdfHGuGB"
               width="100%"
-              height="100%"
+              style={{ height: '100%', minHeight: '700px' }}
               frameBorder="0"
               className="rounded-b-lg"
             ></iframe>
